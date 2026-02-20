@@ -1,0 +1,19 @@
+
+
+--- ERROR 2026-01-15T17:28:02.832Z ---
+ID: vwe1l91yatd7pol1
+URL: https://nocodb-nitrodb.0fdovo.easypanel.host/api/v2/tables/vwe1l91yatd7pol1/records
+Status: 404
+Body: {"error":"TABLE_NOT_FOUND","message":"Table 'vwe1l91yatd7pol1' not found"}
+
+--- ERROR 2026-01-15T17:39:06.764Z ---
+ID: vwe1l91yatd7pol1
+URL: https://nocodb-nitrodb.0fdovo.easypanel.host/api/v2/tables/vwe1l91yatd7pol1/records
+Status: 404
+Body: {"error":"TABLE_NOT_FOUND","message":"Table 'vwe1l91yatd7pol1' not found"}
+
+--- ERROR 2026-01-15T17:43:38.747Z ---
+ID: mdvacifuxpy3g5o
+URL: https://nocodb-nitrodb.0fdovo.easypanel.host/api/v2/tables/mdvacifuxpy3g5o/records
+Status: 400
+Body: {"msg":"Invalid option(s) \"<$5k USD\" provided for column \"Presupuesto\". Valid options are \"Menos de $500 USD, $500 - $1,500 USD, $1,500 - $5,000 USD, Más de $5,000 USD\""}

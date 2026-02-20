@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL="file:./prod.db"
+      - NOCODB_URL=https://nocodb-nitrodb.0fdovo.easypanel.host
+      - NOCODB_TOKEN=sXPNv2C34xYpT_3Wjc9r-d7jCSLC4mmhwVz0yRJk
+      - NOCODB_TABLE_ID=mdvacifuxpy3g5o
+      - AUTH_SECRET=change_this_secret_in_production
+      - ADMIN_EMAIL=admin@brainware.com.co
+      - ADMIN_PASSWORD=admin123

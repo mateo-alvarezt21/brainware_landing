@@ -1,0 +1,32 @@
+{
+  "Navbar": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Let's Talk"
+  },
+  "Hero": {
+    "titlePrefix": "Transforming ideas into",
+    "titleHighlight": "High Impact Software",
+    "description": "Experts in software development and digital transformation. We create technology solutions that scale your business to the next level.",
+    "ctaStart": "Start Project",
+    "ctaPortfolio": "View Portfolio"
+  },
+  "Services": {
+    "title": "Our Services",
+    "description": "Combining technology and creativity to solve complex problems."
+  },
+  "Portfolio": {
+    "title": "Featured Projects",
+    "description": "Success stories where innovation meets execution.",
+    "viewAll": "View all projects"
+  },
+  "Footer": {
+    "description": "Transforming businesses with cutting-edge technology and user-centered design.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "rights": "Brainware. All rights reserved."
+  },
+  "Metadata": {
+    "description": "Brainware is a leading digital transformation and software development company. We build high-impact web and mobile solutions."
+  }
+}
