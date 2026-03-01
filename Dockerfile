@@ -68,7 +68,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/prisma ./prisma
 COPY --from=builder --chown=nextjs:nodejs /app/prisma/schema.prisma ./prisma/schema.prisma
 
 # Copy migration script (uses @prisma/client which is already in standalone)
-COPY --chown=nextjs:nodejs migrate.js ./migrate.js
+COPY --chown=nextjs:nodejs utils/migrate.js ./migrate.js
 
 USER nextjs
 
