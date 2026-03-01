@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls c:/Users/Chingoteo/Desktop/brainware_landing/.env*)"
+      "Bash(ls c:/Users/Chingoteo/Desktop/brainware_landing/.env*)",
+      "Bash(node -e \"const lock = require\\(''./package-lock.json''\\); const keys = Object.keys\\(lock.packages\\).filter\\(k => k.includes\\(''lightningcss''\\) || k.includes\\(''parcel''\\)\\); console.log\\(keys.join\\(''\\\\n''\\)\\);\")"
     ]
   }
 }
