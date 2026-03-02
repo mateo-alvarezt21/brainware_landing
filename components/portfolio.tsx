@@ -105,21 +105,21 @@ export function Portfolio({ projects }: { projects: Project[] }) {
                 <div className="p-8">
                     <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">{selectedProject.category}</span>
                     <h2 className="text-3xl font-bold text-white mb-4">{selectedProject.title}</h2>
-                    <p className="text-white/70 leading-relaxed mb-8">
-                        {/* Placeholder description as DB might not have it yet */}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    
+                    {selectedProject.description && (
+                      <p className="text-white/70 leading-relaxed mb-8">
+                        {selectedProject.description}
+                      </p>
+                    )}
+
                     <div className="flex gap-4">
                         {selectedProject.link && (
                              <Button onClick={() => window.open(selectedProject.link!, '_blank')}>
-                                Ver Proyecto en Vivo
+                                {t('viewLive')}
                                 <ArrowUpRight className="ml-2 h-4 w-4" />
                              </Button>
                         )}
                         <Button variant="secondary" onClick={() => setSelectedProject(null)}>
-                            Cerrar
+                            {t('close')}
                         </Button>
                     </div>
                 </div>

@@ -18,13 +18,25 @@
   "Portfolio": {
     "title": "Featured Projects",
     "description": "Success stories where innovation meets execution.",
-    "viewAll": "View all projects"
+    "viewAll": "View all projects",
+    "viewLive": "View Live Project",
+    "close": "Close"
   },
   "Footer": {
     "description": "Transforming businesses with cutting-edge technology and user-centered design.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "rights": "Brainware. All rights reserved."
+  },
+  "Process": {
+    "title": "Our Process",
+    "subtitle": "A clear path toward technological excellence.",
+    "step1Title": "01. Discovery",
+    "step1Description": "We analyze your vision and requirements to define the best technological strategy that guarantees success. A deep dive into your goals.",
+    "step2Title": "02. Build",
+    "step2Description": "We develop scalable solutions with clean code and modern architecture, following agile standards and incremental deliveries.",
+    "step3Title": "03. Launch",
+    "step3Description": "Automated deployment and continuous monitoring to ensure your product performs at its best from day one. Full post-go-live support."
   },
   "Metadata": {
     "description": "Brainware is a leading digital transformation and software development company. We build high-impact web and mobile solutions."

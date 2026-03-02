@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Search, Code2, Rocket } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function Process() {
+  const t = useTranslations('Process');
+
   return (
     <section className="py-32 relative overflow-hidden" id="proceso">
       {/* Decorative line */}
@@ -18,10 +21,10 @@ export function Process() {
           className="text-center max-w-3xl mx-auto mb-32 space-y-4"
         >
           <h2 className="text-4xl md:text-6xl font-black tracking-tight text-white">
-            Nuestro Proceso
+            {t('title')}
           </h2>
           <p className="text-slate-400 text-lg">
-            Un camino trazado hacia la excelencia tecnológica.
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -36,9 +39,9 @@ export function Process() {
             className="flex flex-col md:flex-row items-center gap-12 md:gap-24"
           >
             <div className="w-full md:w-1/2 md:text-right order-2 md:order-1">
-              <h3 className="text-3xl font-bold mb-4 text-white">01. Descubrimiento</h3>
+              <h3 className="text-3xl font-bold mb-4 text-white">{t('step1Title')}</h3>
               <p className="text-slate-400 text-lg leading-relaxed max-w-lg md:ml-auto">
-                Analizamos tu visión y requerimientos para definir la mejor estrategia tecnológica que garantice el éxito. Una inmersión profunda en tus objetivos.
+                {t('step1Description')}
               </p>
             </div>
             <div className="relative z-10 flex-shrink-0 order-1 md:order-2">
@@ -79,9 +82,9 @@ export function Process() {
               </div>
             </div>
             <div className="w-full md:w-1/2 order-2 md:order-3">
-              <h3 className="text-3xl font-bold mb-4 text-white">02. Construcción</h3>
+              <h3 className="text-3xl font-bold mb-4 text-white">{t('step2Title')}</h3>
               <p className="text-slate-400 text-lg leading-relaxed max-w-lg">
-                Desarrollamos soluciones escalables con código limpio y arquitectura moderna, siguiendo estándares ágiles y entregas incrementales.
+                {t('step2Description')}
               </p>
             </div>
           </motion.div>
@@ -95,9 +98,9 @@ export function Process() {
             className="flex flex-col md:flex-row items-center gap-12 md:gap-24"
           >
             <div className="w-full md:w-1/2 md:text-right order-2 md:order-1">
-              <h3 className="text-3xl font-bold mb-4 text-white">03. Lanzamiento</h3>
+              <h3 className="text-3xl font-bold mb-4 text-white">{t('step3Title')}</h3>
               <p className="text-slate-400 text-lg leading-relaxed max-w-lg md:ml-auto">
-                Despliegue automatizado y monitoreo continuo para asegurar que tu producto rinda al máximo desde el día uno. Soporte total post-go-live.
+                {t('step3Description')}
               </p>
             </div>
             <div className="relative z-10 flex-shrink-0 order-1 md:order-2">

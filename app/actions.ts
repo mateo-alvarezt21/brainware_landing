@@ -38,10 +38,12 @@ export async function getProjects() {
 export async function createProject(formData: FormData) {
   const title = formData.get("title") as string;
   const category = formData.get("category") as string;
-  const image = formData.get("image") as string; // Ideally file upload, but URL string for now
-  
+  const image = formData.get("image") as string;
+  const description = formData.get("description") as string || null;
+  const link = formData.get("link") as string || null;
+
   await prisma.project.create({
-    data: { title, category, image },
+    data: { title, category, image, description, link },
   });
   revalidatePath("/");
   revalidatePath("/admin");

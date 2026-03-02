@@ -99,8 +99,16 @@ export default async function AdminPage() {
                 <input name="category" placeholder="e.g. Web App" required className="w-full bg-zinc-800 rounded p-2 text-white border border-white/10" />
               </div>
               <div>
-                <label className="block text-sm mb-1 text-zinc-400">Imagen URL</label>
-                <input name="image" placeholder="https://..." required className="w-full bg-zinc-800 rounded p-2 text-white border border-white/10" />
+                <label className="block text-sm mb-1 text-zinc-400">Imagen URL o ruta</label>
+                <input name="image" placeholder="/projects/mi-proyecto.png" required className="w-full bg-zinc-800 rounded p-2 text-white border border-white/10" />
+              </div>
+              <div>
+                <label className="block text-sm mb-1 text-zinc-400">Descripción</label>
+                <textarea name="description" rows={3} className="w-full bg-zinc-800 rounded p-2 text-white border border-white/10" />
+              </div>
+              <div>
+                <label className="block text-sm mb-1 text-zinc-400">Link (opcional)</label>
+                <input name="link" placeholder="https://..." className="w-full bg-zinc-800 rounded p-2 text-white border border-white/10" />
               </div>
               <Button type="submit">Añadir Proyecto</Button>
             </form>
